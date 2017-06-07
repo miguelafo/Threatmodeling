@@ -5,8 +5,18 @@
     "description": "Prueba para ver como funciona esto"
   },
   "detail": {
-    "contributors": [],
-    "diagrams": [],
+    "contributors": [
+      {
+        "name": "pepito"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "diagrama de miguel",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
     "reviewer": "miguel"
   }
 }
