@@ -16,7 +16,230 @@
         "thumbnail": "./public/content/images/thumbnail.jpg",
         "id": 0,
         "diagramJson": {
-          "cells": []
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 916,
+                "y": 362
+              },
+              "angle": 0,
+              "id": "e7635296-b686-446b-97e3-a38d03bb643d",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "process 0"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 465,
+                "y": 353
+              },
+              "angle": 0,
+              "id": "1e4984ac-edb0-4254-8c5b-a70cef78a3ef",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "process 1"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 639,
+                "y": 81
+              },
+              "angle": 0,
+              "id": "b80c3c99-7994-4fd2-ac92-880c1016c235",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "actor 2"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "id": "1e4984ac-edb0-4254-8c5b-a70cef78a3ef"
+              },
+              "target": {
+                "id": "e7635296-b686-446b-97e3-a38d03bb643d"
+              },
+              "vertices": [],
+              "id": "802749a3-8636-4e6c-bb38-ad610df90b38",
+              "z": 4,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 443,
+                "y": 568
+              },
+              "angle": 0,
+              "id": "25a66f93-03e6-47a3-93ab-37c280abc517",
+              "z": 5,
+              "attrs": {
+                "text": {
+                  "text": "store 4"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 903,
+                "y": 553
+              },
+              "angle": 0,
+              "id": "95c38e58-4d7f-48c4-ad4b-fe59d06a15f5",
+              "z": 6,
+              "attrs": {
+                "text": {
+                  "text": "store 5"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "1e4984ac-edb0-4254-8c5b-a70cef78a3ef"
+              },
+              "target": {
+                "id": "25a66f93-03e6-47a3-93ab-37c280abc517"
+              },
+              "vertices": [],
+              "id": "61b9e0b0-e6f1-4208-b24e-6e0a38517dbe",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 6",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 7,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "id": "1e4984ac-edb0-4254-8c5b-a70cef78a3ef"
+              },
+              "target": {
+                "id": "95c38e58-4d7f-48c4-ad4b-fe59d06a15f5"
+              },
+              "vertices": [],
+              "id": "8ac60e6f-6b5c-449e-95c5-2df48e28dda6",
+              "z": 8,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "b80c3c99-7994-4fd2-ac92-880c1016c235"
+              },
+              "target": {
+                "id": "1e4984ac-edb0-4254-8c5b-a70cef78a3ef"
+              },
+              "vertices": [],
+              "id": "ba9bdae5-9897-4784-8aa4-4290285f1258",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 8",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 9,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "b80c3c99-7994-4fd2-ac92-880c1016c235"
+              },
+              "target": {
+                "id": "e7635296-b686-446b-97e3-a38d03bb643d"
+              },
+              "vertices": [],
+              "id": "2c8ac701-2acc-4aaf-b501-8767a1b6af53",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 9",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 10,
+              "attrs": {}
+            }
+          ]
         },
         "size": {
           "height": 590,
